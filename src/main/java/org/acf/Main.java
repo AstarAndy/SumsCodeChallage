@@ -3,6 +3,8 @@ package org.acf;
 import java.util.Arrays;
 
 public class Main {
+
+    private static final String FMT_VAL = "Found sum at positions %d and %d.  Value %d + %d = %d.  Leaving";
     public static void main(String[] args) {
 
         System.out.println("Hello world!");
@@ -34,15 +36,14 @@ public class Main {
         int startingIdx = 0;
         int endingIdx = (numbers.length - 1);
         int testValue = 0;
-        String fmtVal = "Found sum at positions %d and %d.  Value %d + %d = %d.  Leaving";
 
         while (startingIdx < endingIdx) {
             testValue = numbers[startingIdx] + numbers[endingIdx];
-            if ( testValue == target) {
+            if (testValue == target) {
                 result[0] = (startingIdx + 1);
                 result[1] = (endingIdx + 1);
                 String logEntry = String
-                        .format(fmtVal,
+                        .format(FMT_VAL,
                                 result[0],
                                 result[1],
                                 numbers[startingIdx],

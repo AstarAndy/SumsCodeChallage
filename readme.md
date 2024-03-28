@@ -5,7 +5,7 @@ the table and find two entries that sum to the supplied target value
 
 ## You can clone this repo and build and run it as follows:
 1. Clone this directory
-2. run .mvnw clean install
+2. run ./mvnw clean install
 3. Import this project into your editor as a Maven project.
 4. Create run configs of main or MainTest
 
